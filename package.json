@@ -1,0 +1,41 @@
+{
+	"name": "react-boilerplate",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "webpack-dev-server --mode development --open --hot",
+		"build": "webpack --mode production",
+		"host": "webpack-dev-server --mode development --open --hot --host 192.168.1.106 "
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.1.2",
+		"@babel/plugin-transform-runtime": "^7.12.15",
+		"@babel/preset-env": "^7.1.0",
+		"@babel/preset-react": "^7.0.0",
+		"babel-loader": "^8.0.4",
+		"css-loader": "^1.0.0",
+		"file-loader": "^6.2.0",
+		"html-webpack-plugin": "^3.2.0",
+		"style-loader": "^0.23.0",
+		"webpack": "^4.20.2",
+		"webpack-cli": "^3.1.1",
+		"webpack-dev-server": "^3.11.2"
+	},
+	"dependencies": {
+		"@babel/runtime": "^7.12.13",
+		"axios": "^0.21.1",
+		"react": "^16.5.2",
+		"react-device-detect": "^1.15.0",
+		"react-dom": "^16.5.2",
+		"react-redux": "^7.2.2",
+		"react-router-dom": "^5.2.0",
+		"redux": "^4.0.5",
+		"redux-thunk": "^2.3.0",
+		"semantic-ui-css": "^2.4.1",
+		"semantic-ui-react": "^2.0.3"
+	}
+}

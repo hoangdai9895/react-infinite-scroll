@@ -1,0 +1,11 @@
+@import "~semantic-ui-css/semantic.min.css";
+.rounded-circle {
+	border-radius: 50% !important;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
