@@ -9,6 +9,7 @@ import { PrivateRoute } from "../common/PrivateRoute";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Login } from "./Login";
 import { setCurrentUser } from "../redux/actions/auth.action";
+import { NotFound } from "./NotFound";
 
 if (localStorage.getItem("isLogin")) {
 	store.dispatch(setCurrentUser(true));
@@ -20,15 +21,16 @@ const App = () => {
 			<Router>
 				<Switch>
 					<Route exact path="/login" component={Login} />
-					<Switch>
-						<Layout>
+					<Layout>
+						<Switch>
 							<PrivateRoute
 								exact
 								path="/"
 								component={GalleryModal}
 							/>
-						</Layout>
-					</Switch>
+							<PrivateRoute component={NotFound} />
+						</Switch>
+					</Layout>
 				</Switch>
 			</Router>
 		</Provider>

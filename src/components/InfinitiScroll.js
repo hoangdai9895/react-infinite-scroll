@@ -10,12 +10,7 @@ export const InfinitiScroll = () => {
 	const [loading, setLoading] = useState(false);
 	const [page, setPage] = useState(1);
 
-	const container = useRef(null);
-	// const lastImg = useRef(null);
-
 	const oserver = useRef();
-
-	const cancelTokenSource = axios.CancelToken.source();
 
 	const lastImg = useCallback(
 		(node) => {
@@ -47,7 +42,7 @@ export const InfinitiScroll = () => {
 	}, [page, getUploadedPhoto, setLoading]);
 
 	return (
-		<div className="infinity-scroll" ref={container}>
+		<div className="infinity-scroll">
 			{photos.map((e, i) =>
 				photos.length === i + 1 ? (
 					<div className="img-container" key={i}>
