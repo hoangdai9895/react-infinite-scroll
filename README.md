@@ -1,4 +1,4 @@
-# Simple React Webpack boilerplate
+# Simple React Webpack + Infinite scroll
 
 A ready to use simple boilerplate for React Apps.
 
